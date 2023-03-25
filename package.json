@@ -1,0 +1,28 @@
+{
+  "name": "kafka-app-janttonen",
+  "version": "1.0.0",
+  "description": "06_ohjelmistoarkkitehtuurit_ja_patternit",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:deleteTopics": "node ./admin/deleteTopics.js",
+    "start:createTopics": "node ./admin/createTopics.js",
+    "start:producer": "node ./producer/index.js",
+    "start:consumer": "node ./consumer/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Janttonen/kafka-app-janttonen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Janttonen/kafka-app-janttonen/issues"
+  },
+  "homepage": "https://github.com/Janttonen/kafka-app-janttonen#readme",
+  "dependencies": {
+    "kafkajs": "^2.2.4",
+    "uuid": "^9.0.0"
+  }
+}
